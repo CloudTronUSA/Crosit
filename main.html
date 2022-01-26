@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crosit</title>
+        <link rel="shortcut icon" href="./images/crosit_logo_128x128.png">
+        <link rel="stylesheet" type="text/css" href="./libs/bootstrap-5.1.3-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/tab_content.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/titlebar.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/function_bar.css" />
+        <script src="./libs/draggabilly.pkgd.min.js"></script>
+        <script src="./libs/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+        <script src="./javascripts/titlebar.js"></script>
+        <script src="./javascripts/tabs.js"></script>
+        <script src="./javascripts/function_bar.js"></script>
+    </head>
+    <body>
+        <!-- tittle tab bar -->
+        <div class="chrome-tabs" style="padding: 8px 3px 4px 0px; --tab-content-margin:9px; margin-right:100px; app-region: drag;" data-chrome-tabs-instance-id="0">
+            <div class="chrome-tabs-content">
+            </div>
+            <div class="chrome-tabs-bottom-bar"></div>
+            <!-- Styles to prevent flash after JS initialization -->
+            <style>
+                .chrome-tabs .chrome-tab {
+                    width: 258px
+                }
+                .chrome-tabs .chrome-tab:nth-child(1) {
+                    transform: translate3d(0px, 0, 0)
+                }
+                .chrome-tabs .chrome-tab:nth-child(2) {
+                    transform: translate3d(239px, 0, 0)
+                }
+            </style>
+            <style>
+                .chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(1) {
+                    transform: translate3d(0px, 0, 0)
+                }
+                .chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(2) {
+                    transform: translate3d(184px, 0, 0)
+                }
+                .chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(3) {
+                    transform: translate3d(368px, 0, 0)
+                }
+                .chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(4) {
+                    transform: translate3d(552px, 0, 0)
+                }
+            </style>
+        </div>
+        <div class="chrome-tabs" style="position:absolute; top:0; right:0; width:100px;-webkit-app-region: drag;" data-chrome-tabs-instance-id="0">
+            <div class="chrome-tab-minimize-window" style="-webkit-app-region: no-drag;"></div>
+            <div class="chrome-tab-maxmin-window" style="-webkit-app-region: no-drag;"></div>
+            <div class="chrome-tab-close-window" style="-webkit-app-region: no-drag;"></div>
+            <div class="chrome-tabs-bottom-bar"></div>
+        </div>
+        <!-- function bar -->
+        <div class="chrome-funcbar">
+            <div class="chrome-funcbar-content border-bottom">
+                <div class="chrome-tab-forward" style=""></div>
+                <div class="chrome-tab-goback" style=""></div>
+                <div class="chrome-tab-reload" style=""></div>
+                <div class="chrome-tab-address-input">
+                    <div class="chrome-tab-https" style=""></div>
+                    <input type="text" class="chrome-tab-addrinput">
+                    <div class="chrome-tab-bookmark" style=""></div>
+                </div>
+                <div class="chrome-tab-permissions" style=""></div>
+                <div class="chrome-tab-update" style=""></div>
+                <div class="chrome-tab-menu" style=""></div>
+            </div>
+        </div>
+        <script src="./javascripts/main.js"></script>
+    </body>
+</html>

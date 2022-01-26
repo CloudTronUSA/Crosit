@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Crosit",
+    "version": "0.1",
+  
+    "description": "A powerful browser based on javascript.",
+    "icons": {
+      "16": "images/crosit_logo_16x16.png",
+      "32": "images/crosit_logo_32x32.png",
+      "48": "images/crosit_logo_48x48.png",
+      "128": "images/crosit_logo_48x48.png"
+    },
+  
+    "app": {
+      "background": {
+        "scripts": ["config.js", "background.js"]
+      }
+    },
+  
+    "permissions": [
+      "storage",
+      "webview",
+      "audioCapture",
+      "videoCapture",
+      "fullscreen",
+      "pointerLock",
+      "http://*/*",
+      "https://*/*"
+      ]
+  }
+  
